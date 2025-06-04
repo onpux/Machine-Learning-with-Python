@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning with Python</title>
+    <link rel="stylesheet" href="ml_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Machine Learning with Python</h1>
+        <p>Experimenta con modelos de aprendizaje supervisado y no supervisado, ¡directamente en tu navegador!</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Clasificador de Correos (Spam vs No Spam)</h2>
+            <p>Introduce un correo y el modelo simulado lo clasificará como spam o no spam.</p>
+            <textarea id="email-input" rows="3" placeholder="Escribe aquí el correo..."></textarea>
+            <button onclick="classifyEmail()">Clasificar</button>
+            <div id="email-result" class="result"></div>
+        </section>
+        <section class="card">
+            <h2>Predicción de Precios de Vivienda</h2>
+            <p>Simula la predicción de precios usando características básicas.</p>
+            <div class="input-row">
+                <input type="number" id="rooms" placeholder="Habitaciones" min="1" max="10">
+                <input type="number" id="area" placeholder="Área (m²)" min="10" max="1000">
+                <input type="number" id="age" placeholder="Años" min="0" max="100">
+                <button onclick="predictHousePrice()">Predecir Precio</button>
+            </div>
+            <div id="house-result" class="result"></div>
+        </section>
+        <section class="card">
+            <h2>Detección de Sentimientos</h2>
+            <p>Introduce un comentario o tweet y detecta su sentimiento.</p>
+            <textarea id="sentiment-input" rows="2" placeholder="Escribe un comentario..."></textarea>
+            <button onclick="detectSentiment()">Detectar Sentimiento</button>
+            <div id="sentiment-result" class="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Hecho con HTML, CSS y JavaScript. Inspirado en Scikit-learn, TensorFlow y NLP.</p>
+    </footer>
+    <script src="ml_app.js"></script>
+</body>
+</html>
